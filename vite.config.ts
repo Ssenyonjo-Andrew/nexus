@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 3001,
   },
+    base: process.env.VITE_BASE_PATH || "/nexus",
   plugins: [
     react(),
     mode === 'development' &&
